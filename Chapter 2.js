@@ -44,3 +44,47 @@ output += 273;
 output += 103;
 console.log(output); // 428
 
+let output1 = 'hello ';
+output1 += 'world ';
+output1 += '!';
+console.log(output1);
+
+/* 증감 연산자 */
+let number = 10;
+number ++;
+console.log(number); // 11
+number --;
+console.log(number); // 10
+console.log(--number); // 9
+console.log(number--); // 9, 저장은 8로 된다
+
+/* 식별 연산자 (자료형 검사) */
+console.log(typeof 1); // number
+console.log(typeof 'Sognag'); //string
+console.log(typeof 1.2); //number
+console.log(typeof({})); //object
+console.log(typeof(function () {})); //function
+console.log(typeof(let)); //undefined
+// undefined data type은 초기화되지 않은 것과 선언하지 않은 것으로 나뉜다
+
+/* 형 변환 */
+console.log(Number('1'));
+console.log(String(1));
+console.log(Boolean(0));
+console.log(Number('string')); //NaN, Not a Number
+console.log(isNaN(Number('string'))); //ture
+// isNaN() 함수는 NaN인지 아닌지 식별한다
+
+/* 자동 형변환 */
+console.log('52' + 173); //string
+console.log('52' - 173); //number
+console.log(!!NaN); //boolean
+
+/* 일치 연산자 */
+//자료형의 type까지 맞춰서 비교하는 연산자를 의미한다
+console.log(`52 == '52' : ${52 == '52'}`);
+console.log(`52 === '52' : ${52 === '52'}`);
+
+/* Constant */
+const pi_const = 3.14195265;
+console.log(pi_const);

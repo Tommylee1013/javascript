@@ -16,3 +16,4 @@ print(os.totalmem()); // 시스템 총 메모리
 print(os.freemem()); // 시스템 사용 가능 메모리
 print(os.cpus()); // CPU정보를 담은 객체 반환
 print(os.networkInterfaces()); // 네트워크 인터페이스의 정보를 담은 배열 반환
+

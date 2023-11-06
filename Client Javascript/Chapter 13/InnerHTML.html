@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Page</title>
+    <script>
+        window.onload = function () {
+            const header = document.getElementById('header');
+            const originalText = header.innerHTML;
+            header.innerHTML = 'Change to JavaScript! <br />';
+            header.innerHTML += '원래는 ' + originalText + '였답니다!';
+        };
+    </script>
+</head>
+<body>
+    <h1 id = "header">Header 1</h1>
+</body>
+</html>

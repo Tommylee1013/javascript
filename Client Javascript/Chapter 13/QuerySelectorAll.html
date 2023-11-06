@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Basic</title>
+    <script>
+        window.load = function () { // 화면 구성이 완료된다면?
+            const headers = document.querySelectorAll('h1');
+            for (let i = 0; i < headers.length; i++) {
+                const header = headers[i];
+
+                headers.style.color = 'orange';
+                headers.style.background = 'red';
+                header.innerHTML = 'From Javascript';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h1>Header 1</h1>
+    <h1>Header 1</h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traditional Event Example</title>
+    <script>
+        window.onload = function () {
+            const button = document.getElementById('button');
+
+            button.onclick = function () {
+              alert("click");
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id = "button">This is a button</button>
+    <script>
+        document.getElementById('button').onclick = function () {
+            this.innerHTML = this.innerHTML + '*';
+        };
+    </script>
+</body>
+</html>

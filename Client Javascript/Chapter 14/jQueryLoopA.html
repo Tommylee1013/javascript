@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Event</title>
+    <script src = "../../jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            const $headers = $("h1");
+            for (let i = 0; i < $headers.lenth; i++) {
+                if (i % 2 == 1) {
+                    const domElement = $headers.get(i);
+                    $(domElement).css('backgroundColor', 'red');
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Header A</h1>
+    <h2>Header B</h2>
+    <h3>Header C</h3>
+    <h4>Header D</h4>
+</body>
+</html>

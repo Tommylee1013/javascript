@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Event</title>
+    <script src = '../../jquery-3.7.1.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('h1').each(function (index, element) {
+                if (index % 2 == 1) {
+                    $(this).css('backgroundColor', 'darkorange');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Header A</h1>
+    <h1>Header B</h1>
+    <h1>Header C</h1>
+    <h1>Header D</h1>
+</body>
+</html>

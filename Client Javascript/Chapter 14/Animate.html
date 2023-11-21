@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Animate</title>
+    <style>
+        .box {
+            width : 100px; height : 100px;
+            background-color: darkorange;
+            position : absolute;
+            left : 10px; top : 10px;
+        }
+    </style>
+    <script src = "../../jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.box').click(function () {
+                $(this).animate({
+                    left : 1000
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class = 'box'></div>
+</body>
+</html>

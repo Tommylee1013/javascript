@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Basic</title>
+    <script src = "../../jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('<h1></h1>')
+                    .text("Hello")
+                    .attr('data-test','test')
+                    .css({
+                        backgroundColor : 'red',
+                        color : 'white'
+                    })
+                    .appendTo('body');
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

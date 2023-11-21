@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Event</title>
+    <script src = "../../jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h1').on('click', function (event) {
+                const text = $(this).text();
+                alert(text);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Header_1</h1>
+    <h2>Header_2</h2>
+</body>
+</html>
